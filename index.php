@@ -14,11 +14,14 @@ if (isset($_GET['ver'])) {
   $controller->listado();
 } */
 
-$partes = explode('/', $_SERVER['PATH_INFO']);
-var_dump($partes);
-
-if ($partes[1]=='ver' && is_numeric($partes[2])) {
-  $controller->ver($partes[2]);
+if (isset( $_SERVER['PATH_INFO'])) {
+  $partes = explode('/', $_SERVER['PATH_INFO']);
+  if ($partes[1]=='ver' && is_numeric($partes[2])) {
+    $controller->ver($partes[2]);
+  } else {
+    $controller->listado();
+  }
 } else {
   $controller->listado();
 }
+

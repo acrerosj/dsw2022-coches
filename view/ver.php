@@ -9,7 +9,7 @@
     }
 </style>
 
-<h1>Ejemplo 6: Vista de coche</h1>
+<h1>Detalle de un coche</h1>
 <table>
     <tr>
         <th>Marca</th>
@@ -25,3 +25,6 @@
         <td><?php echo $row->getPropietario() ?></td>
     </tr>
 </table>
+<p>
+    <a href="index.php">Volver al listado</a>
+</p>

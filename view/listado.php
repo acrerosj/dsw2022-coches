@@ -9,7 +9,7 @@
     }
 </style>
 
-<h1>Ejemplo 5: Listado de coches</h1>
+<h1>Listado de coches</h1>
 <table>
     <tr>
         <th>Marca</th>
