@@ -10,6 +10,9 @@
 </style>
 
 <h1>Listado de coches</h1>
+<p>
+    <a href="/propietarios.php">Ver propietarios</a>
+</p>
 <table>
     <tr>
         <th>Marca</th>

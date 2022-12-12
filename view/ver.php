@@ -26,5 +26,5 @@
     </tr>
 </table>
 <p>
-    <a href="index.php">Volver al listado</a>
+    <a href="/index.php">Volver al listado</a>
 </p>
