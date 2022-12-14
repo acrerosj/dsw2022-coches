@@ -17,4 +17,23 @@ class PropietarioController {
     $propietarios = $this->propietarios;
     require("view/propietarios/listado.php");
   }
+
+  private function buscarPropietario($nombre) {
+    foreach ($this->propietarios as $propietario) {
+      if ($propietario->nombre == $nombre) {
+        return $propietario;
+      }
+    }
+    return null;
+  }
+
+  public function ver($nombre) {
+    $propietario = $this->buscarPropietario($nombre);
+    if ($propietario == null) {
+      require("view/error.php");  
+    } else {
+      require("view/propietarios/ver.php");
+    }
+  }
+
 }

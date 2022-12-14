@@ -18,6 +18,8 @@ if (isset( $_SERVER['PATH_INFO'])) {
   $partes = explode('/', $_SERVER['PATH_INFO']);
   if ($partes[1]=='ver' && is_numeric($partes[2])) {
     $controller->ver($partes[2]);
+  } elseif ($partes[1]=='propiedad' && isset($partes[2])) {
+    $controller->propiedadDe($partes[2]);
   } else {
     $controller->listado();
   }

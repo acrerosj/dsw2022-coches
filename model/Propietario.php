@@ -8,4 +8,6 @@ class Propietario {
     $this->nombre = $nombre;
     $this->edad = $edad;
   }
+
+  
 }

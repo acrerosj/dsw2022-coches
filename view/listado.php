@@ -26,7 +26,11 @@
             <td><?php printf("<a href=\"/index.php/ver/%s\">%s</a>", $key, $row->getMarca()) ?></td>
             <td><?php echo $row->getModelo() ?></td>
             <td><?php echo $row->getColor() ?></td>
-            <td><?php echo $row->getPropietario() ?></td>
+            <td>
+                <a href="/propietarios.php/ver/<?=$row->getPropietario()?>">
+                <?php echo $row->getPropietario() ?>
+                </a>
+            </td>
         </tr>
 
      <?php endforeach; ?>

@@ -18,7 +18,11 @@
     <?php foreach ($propietarios as $p): ?>
 
         <tr>
-            <td><?php echo $p->nombre ?></td>
+            <td>
+                <a href="/propietarios.php/ver/<?=$p->nombre?>">
+                <?php echo $p->nombre ?>
+                </a>
+            </td>
             <td><?php echo $p->edad ?></td>
         </tr>
 
