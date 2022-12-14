@@ -22,7 +22,11 @@
         <td><?php echo $row->getMarca() ?></td>
         <td><?php echo $row->getModelo() ?></td>
         <td><?php echo $row->getColor() ?></td>
-        <td><?php echo $row->getPropietario() ?></td>
+        <td>
+            <a href="/propietarios.php/ver/<?php echo $row->getPropietario() ?>">
+            <?php echo $row->getPropietario() ?>
+            </a>
+        </td>
     </tr>
 </table>
 <p>

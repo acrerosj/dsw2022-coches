@@ -22,5 +22,8 @@
     </tr>
 </table>
 <p>
+    <a href="/index.php/propiedad/<?php echo $propietario->nombre ?>">Ver los coches de este propietario</a>
+</p>
+<p>
     <a href="/index.php">Volver al listado</a>
 </p>
